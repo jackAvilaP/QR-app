@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import CardId from './src/components/CardId';
+
 import ScannerQR from './src/components/ScannerQR';
 import Whatsapp from './src/components/Whatsapp';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ScannerQR />
-      <Whatsapp />
-      <StatusBar style="auto" />
+      {/* <ScannerQR /> */}
+      {/* <Whatsapp /> */}
+      <CardId/>
+      
     </View>
   );
 }
@@ -15,8 +18,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor:'#ffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button:{
+    width:300
+  }
 });
