@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import ScannerQR from './src/components/ScannerQR';
+import Whatsapp from './src/components/Whatsapp';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <ScannerQR />
+      <Whatsapp />
       <StatusBar style="auto" />
     </View>
   );
