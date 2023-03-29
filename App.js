@@ -23,7 +23,17 @@ export default function App() {
     <View>
       {/* <ScannerQR /> */}
       {/* <Whatsapp /> */}
-      <Image style={{position:"absolute", left:20, top:70, width:200,height:100, zIndex:100}} source={MyDGrand} />
+      <Image
+        style={{
+          position: "absolute",
+          left: 20,
+          top: 70,
+          width: 200,
+          height: 100,
+          zIndex: 100,
+        }}
+        source={MyDGrand}
+      />
       <ImageBackground source={image3} resizeMode="cover" style={styles.image}>
         <CardId />
       </ImageBackground>
