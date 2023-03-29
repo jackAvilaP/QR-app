@@ -5,6 +5,7 @@ import Whatsapp from './src/components/Whatsapp';
 export default function App() {
   return (
     <View style={styles.container}>
+      
       <ScannerQR />
       <Whatsapp />
       <StatusBar style="auto" />
