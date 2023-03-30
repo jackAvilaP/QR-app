@@ -35,6 +35,8 @@ const ScannerQR = () => {
                     height: 300,
                 }}
             />
+
+            
              {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
         </>
     )
