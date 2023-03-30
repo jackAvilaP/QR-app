@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text } from 'react-native'
+import { Button, Text } from 'react-native'
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
 
@@ -32,11 +32,10 @@ const ScannerQR = () => {
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={{
                     width: 300,
-                    height: 300
-
+                    height: 300,
                 }}
             />
-            {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />} 
+             {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
         </>
     )
 }
