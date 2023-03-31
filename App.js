@@ -25,7 +25,7 @@ export default function App() {
             fontSize: 36,
             fontWeight: 400,
             color: "#5E2F77",
-            marginBottom: 15,
+            marginBottom: 30,
           }}
         >
           Identification
